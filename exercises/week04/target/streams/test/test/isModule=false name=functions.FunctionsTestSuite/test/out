@@ -1,0 +1,6 @@
+[0m[[0minfo[0m] [0m[32mFunctionsTestSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Tail removes the first element[0m[0m
+[0m[[0minfo[0m] [0m[32m- setHead changes the first element of the list[0m[0m
+[0m[[0minfo[0m] [0m[32m- drop removes N elements from the front of the list[0m[0m
+[0m[[0minfo[0m] [0m[31m- init removes the last element *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  List("A", "B", "C", "D") did not equal List("A", "B", "C") (FunctionsTestSuite.scala:21)[0m[0m

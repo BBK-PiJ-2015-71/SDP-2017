@@ -1,5 +1,10 @@
 package basics
 
+import scala.collection.mutable.ArrayBuffer
+import scala.math._
+import BigInt.probablePrime
+import scala.util.Random
+
 /**
  * This is a singleton object containing the functions you need
  * to implement. Please make sure to read the documentation associated
@@ -15,7 +20,9 @@ object ScalaBasics {
    * @param b operand b
    * @return the sum
    */
-  def add(a: Int, b: Int): Int = ???
+  def add(a: Int, b: Int): Int = {
+    a+b
+  }
 
   /**
    * Write a function that returns the inclusive Range from start to end.
@@ -26,7 +33,9 @@ object ScalaBasics {
    * @param end the end of the range
    * @return the inclusive Range from start to end
    */
-  def inRange(start: Int, end: Int): Range = ???
+  def inRange(start: Int, end: Int): Range = {
+    start to end
+  }
   
   /**
    * Write a function that returns a Range of odd n odd integers starting at 1.
@@ -36,7 +45,9 @@ object ScalaBasics {
    * @param n the number of odd integers in the range
    * @return a Range of odd integers, excluding the last add integer
    */
-  def oddRange(n: Int): Range = ???
+  def oddRange(n: Int): Range = {
+    1 to 2*n-1 by 2
+  }
   
   /**
    * Write a function that returns the minimum integer in the Array r.
@@ -50,7 +61,16 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minWhile(r: Array[Int]): Int = ???
+  def minWhile(r: Array[Int]): Int = {
+    val length_array=r.length
+    var min=r(0)
+    var i=1
+    while (i<length_array){
+      if (r(i)<min) min=r(i)
+      i+=1
+    }
+    min
+  }
 
   /**
    * Write a function that returns the minimum integer in the Array r.
@@ -64,7 +84,14 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minFor(r: Array[Int]): Int = ???
+  def minFor(r: Array[Int]): Int = {
+    var i=1
+    var min=r(0)
+    for(i<- 1 to r.length-1){
+      min=math.min(r(i),min)
+    }
+    min
+  }
 
   /**
    * Write a function called minRecursive that returns the minimum integer in the Array r.
@@ -80,7 +107,7 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minRecursive(r: Array[Int]): Int = ???
+  def minRecursive(r: Array[Int]): Int = r.min
 
   /**
    * Return the base 36 equivalent of the BitInt b.
@@ -90,7 +117,22 @@ object ScalaBasics {
    * @param b a big integer
    * @return the base 36 equivalent
    */
-  def base36(b: BigInt): String = ???
+  def base36(b: BigInt): String = {
+    val baseString: String = b.toString(36)
+    baseString
+    /**
+    val digits=Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
+    var encoded=""
+    var int1=b
+    var remainder=0
+    while(int1>0){
+      remainder=int1.toInt%36
+      int1=int1/36
+      encoded=digits(remainder)+encoded
+    }
+    encoded
+      */
+  }
 
   /**
    * Splits the String s in half.
@@ -113,7 +155,9 @@ object ScalaBasics {
    * @param s the string to split
    * @return the split string as a tuple
    */
-  def splitInHalf(s: String): (String, String) = ???
+  def splitInHalf(s: String): (String, String) = {
+    (s.substring(0,s.length/2), s.substring(s.length/2))
+  }
 
   /**
    * Determines if the given string s is a palindrome.
@@ -136,7 +180,11 @@ object ScalaBasics {
    * @param s the potential palindrome
    * @return true if s is a palindrome; false otherwise
    */
-  def isPalindrome(s: String): Boolean = ???
+  def isPalindrome(s: String): Boolean = {
+    val str2= s.replaceAll("[\\p{P}\\s]","").toLowerCase
+    (for(i<-0 to str2.length-1) yield
+      if(str2.charAt(i)==str2.charAt(str2.length-1-i)) true else false).max
+  }
 
   /**
    * You don't have to complete this one as we've removed it from the list
