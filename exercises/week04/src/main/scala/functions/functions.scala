@@ -1,4 +1,5 @@
 package functions
+import scala.collection.mutable.ListBuffer
 
 object Funcs {
 
@@ -58,7 +59,7 @@ object Funcs {
     */
   def init[A](ls: List[A]): List[A] = ls match {
     case Nil => throw new IllegalArgumentException("Empty list")
-    case _ => ls
+    case _ => ls.dropRight(1)
   }
 
   // LIST FOLDING
@@ -74,7 +75,9 @@ object Funcs {
    * list and the cumulative value.
    * @return the final valued.
    */
-  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = ???
+  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = {
+   ls.foldLeft(z)((r,c)=>f(r,c))
+  }
 
   /**
     * Use your implementation of foldLeft to implement these functions:
@@ -88,16 +91,24 @@ object Funcs {
     * the sublists into one long list. For example, flatten(List(List(1,2,3),
     * List(4,5,6))) produces List(1,2,3,4,5,6).
     */
-  def sum(ls: List[Double]): Double = ???
+  def sum(ls: List[Double]): Double = {
+    foldLeft(ls,0.0)((r,c)=>r+c)
+  }
 
-  def product(ls: List[Double]): Double = ???
+  def product(ls: List[Double]): Double = {
+    foldLeft(ls,1.0)((r,c)=>r*c)
+  }
+  def length[A](ls: List[A]): Int = {
+    foldLeft(ls,0)((r,c)=>r+1)
+  }
 
-  def length[A](ls: List[A]): Int = ???
+  def reverse[A](ls: List[A]): List[A] = {
+    foldLeft(ls,List[A]())((r,c)=>c::r)
+  }
 
-  def reverse[A](ls: List[A]): List[A] = ???
-
-  def flatten[A](ls: List[List[A]]): List[A] = ???
-
+  def flatten[A](ls: List[List[A]]): List[A] = {
+    foldLeft(ls,List[A]())((r,c)=>r:::c)
+  }
   // MAP AND FILTER
 
   /**
@@ -109,7 +120,11 @@ object Funcs {
     * @param f  : A => B the function to be applied to each element of the input.
     * @return the resulting list from applying f to each element of ls.
     */
-  def map[A, B](ls: List[A])(f: A => B): List[B] = ???
+  def map[A, B](ls: List[A])(f: A => B): List[B] = {
+    var ls2 = new ListBuffer[B]()
+    for(x<-0 to ls.length-1){ls2+=f(ls(x))}
+    ls2.toList
+  }
 
   /**
     * filter removes all elements from a list for which a given predicate
@@ -120,7 +135,11 @@ object Funcs {
     * @param f  : A => Boolean the predicate
     * @return the filtered list.
     */
-  def filter[A](ls: List[A])(f: A => Boolean): List[A] = ???
+  def filter[A](ls: List[A])(f: A => Boolean): List[A] = {
+    var ls2 = new ListBuffer[A]()
+    for(x<-0 to ls.length-1){if(f(ls(x))==true) ls2+=ls(x) }
+    ls2.toList
+  }
 
   /**
     * flatMap is very similar to map. However, the function returns a List,
@@ -131,7 +150,15 @@ object Funcs {
     * @return a List[B] containing the flattened results of applying f to all
     *         elements of ls.
     */
-  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = ???
+  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = {
+    var ls2 = new ListBuffer[B]()
+    for(x<-0 to ls.length-1) {
+      for (y <- 0 to f(ls(x)).length - 1){
+        ls2+=f(ls(x))(y)
+      }
+    }
+    ls2.toList
+  }
 
   // COMBINING FUNCTIONS
 
