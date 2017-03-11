@@ -12,3 +12,5 @@
 [0m[[0minfo[0m] [0m[32m- map creates a new list of the correct values[0m[0m
 [0m[[0minfo[0m] [0m[32m- filter filters the list[0m[0m
 [0m[[0minfo[0m] [0m[32m- flatMap maps and flattens[0m[0m
+[0m[[0minfo[0m] [0m[32m- maxAverage calculates the max average[0m[0m
+[0m[[0minfo[0m] [0m[32m- variance calculates the correct variance[0m[0m

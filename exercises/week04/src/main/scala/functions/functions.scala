@@ -1,5 +1,6 @@
 package functions
 import scala.collection.mutable.ListBuffer
+import scala.math.max
 
 object Funcs {
 
@@ -172,7 +173,10 @@ object Funcs {
     *           length is greater than 0.
     * @return the average value of the largest values in the pairs.
     */
-  def maxAverage(ls: List[(Double, Double)]): Double = ???
+  def maxAverage(ls: List[(Double, Double)]): Double = {
+    val ls2 = ls.map(a=>math.max(a._1,a._2))
+    ls2.sum/ls2.length
+  }
 
   /**
     * variance takes a List[Double] and calculates the squared distance
@@ -186,5 +190,10 @@ object Funcs {
     * @param ls     : List[Double] a list of values, whose length is greater than 0.
     * @param return the variance of the input.
     */
-  def variance(ls: List[Double]): Double = ???
+  def variance(ls: List[Double]): Double = {
+    val m=ls.sum/ls.length
+    val ls2 = ls.map(a=>(a-m)*(a-m))
+    ls2.sum/ls2.length
+
+  }
 }

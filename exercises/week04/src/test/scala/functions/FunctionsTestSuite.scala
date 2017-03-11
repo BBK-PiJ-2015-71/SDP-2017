@@ -60,7 +60,7 @@ class FunctionsTestSuite extends FunSuite {
                assert(flatMap((1 to 5).toList)(x => (x to 5).toList) ==
                  List(1, 2, 3, 4, 5, 2, 3, 4, 5, 3, 4, 5, 4, 5, 5))
              }
-  /*
+
                // Combined
 
                test("maxAverage calculates the max average") {
@@ -68,9 +68,9 @@ class FunctionsTestSuite extends FunSuite {
                  assert(maxAverage(list) == 13.0)
                }
 
-               test("variance calculates the correct variance") {
-                 val v = variance(List(1.0, 2.0, 3.0, 4.0, 5.0))
-                 assert(v == 2.0, "If you got 2.5, you divided by the wrong thing, probably.")
-               }
-               */
+                 test("variance calculates the correct variance") {
+                   val v = variance(List(1.0, 2.0, 3.0, 4.0, 5.0))
+                   assert(v == 2.0, "If you got 2.5, you divided by the wrong thing, probably.")
+                 }
+  /*               */
 }
