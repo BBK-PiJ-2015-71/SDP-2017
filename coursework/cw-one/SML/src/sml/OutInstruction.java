@@ -6,26 +6,25 @@ package sml;
 
 public class OutInstruction extends Instruction {
     private int result;
-    private int op1;
-    private int op2;
+
 
     public OutInstruction(String label, String op) {
         super(label, op);
     }
 
-    public OutInstruction(String label, int op1) {
+    public OutInstruction(String label, int result) {
         this(label, "out");
-        this.op1 = op1;
+        this.result = result;
     }
 
     @Override
     public void execute(Machine m) {
-        int value1 = m.getRegisters().getRegister(op1);
-        System.out.println("Value of "+op1 +" is "+ value1);
+        int result = m.getRegisters().getRegister(this.result);
+        System.out.println("Value of "+this.result +" is "+ result);
     }
 
     @Override
     public String toString() {
-        return super.toString() + " " + op1 + " print to java console ";
+        return super.toString() + " " + result + " print to java console ";
     }
 }
