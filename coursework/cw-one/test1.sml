@@ -6,3 +6,4 @@ L5 lin 12 10
 L6 sub 13 12 11
 L7 mul 14 12 13
 L8 div 15 10 12
+L9 out 10
