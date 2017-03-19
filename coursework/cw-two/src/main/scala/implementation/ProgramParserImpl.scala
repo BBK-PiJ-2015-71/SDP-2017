@@ -10,7 +10,7 @@ import scala.io.Source
   */
 class ProgramParserImpl extends vendor.ProgramParser{
 
-    /**
+  /**
     * Parses a file representation of a bytecode program
     * into an `InstructionList`.
     *
@@ -33,7 +33,7 @@ class ProgramParserImpl extends vendor.ProgramParser{
 
     for(a<-tempb){
       val a1=a.split(" ")
-      if(names.contains(a1(0))) {
+      //if(names.contains(a1(0))) {
         if (a1(0) == "iconst") {
           val v = new Instruction(a1(0), Vector(a1(1).toInt))
           temp1 += v
@@ -42,7 +42,7 @@ class ProgramParserImpl extends vendor.ProgramParser{
           val v = new Instruction(a1(0), vec)
           temp1 += v
         }
-      }
+      //}
     }
     val v2:InstructionList = temp1.to[Vector]
     v2
@@ -64,7 +64,7 @@ class ProgramParserImpl extends vendor.ProgramParser{
 
     for(a<-inst){
       val a1=a.split(" ")
-      if(names.contains(a1(0))) {
+      //if(names.contains(a1(0))) {
         if (a1(0) == "iconst") {
           val v = new Instruction(a1(0), Vector(a1(1).toInt))
           temp1 += v
@@ -73,7 +73,7 @@ class ProgramParserImpl extends vendor.ProgramParser{
           val v = new Instruction(a1(0), vec)
           temp1 += v
         }
-      }
+      //}
     }
     val v2:InstructionList = temp1.to[Vector]
     v2

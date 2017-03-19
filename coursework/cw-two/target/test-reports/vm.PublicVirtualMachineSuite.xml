@@ -7,8 +7,8 @@
                      <testcase classname="vm.PublicVirtualMachineSuite" name="(It is not a test)" time="0.0">
                                                  <error message="an implementation is missing" type="scala.NotImplementedError">scala.NotImplementedError: an implementation is missing
 	at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-	at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:25)
-	at vm.PublicVirtualMachineSuite.&lt;init&gt;(PublicVirtualMachineSuite.scala:7)
+	at factory.VirtualMachineFactory$.virtualMachine(VirtualMachineFactory.scala:27)
+	at vm.PublicVirtualMachineSuite.&lt;init&gt;(PublicVirtualMachineSuite.scala:9)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
