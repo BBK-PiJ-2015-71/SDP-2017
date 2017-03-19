@@ -2,7 +2,7 @@
 [0m[[0minfo[0m] [0m[31mvm.PublicVirtualMachineParserSuite *** ABORTED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:24)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:25)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at vm.PublicVirtualMachineParserSuite.<init>(PublicVirtualMachineParserSuite.scala:8)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
@@ -15,7 +15,7 @@
 [0m[[0minfo[0m] [0m[31mbc.PublicByteCodeParserSuite *** ABORTED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.byteCodeParser(VirtualMachineFactory.scala:21)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.byteCodeParser(VirtualMachineFactory.scala:22)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at bc.PublicByteCodeParserSuite.<init>(PublicByteCodeParserSuite.scala:7)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m

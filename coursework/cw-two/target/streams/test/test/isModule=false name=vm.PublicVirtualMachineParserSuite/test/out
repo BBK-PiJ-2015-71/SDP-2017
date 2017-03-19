@@ -1,21 +1,8 @@
 [0m[[0minfo[0m] [0m[32mPublicVirtualMachineParserSuite:[0m[0m
-[0m[[0minfo[0m] [0m[31mvm.PublicVirtualMachineSuite *** ABORTED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:24)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at vm.PublicVirtualMachineSuite.<init>(PublicVirtualMachineSuite.scala:7)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at java.lang.Class.newInstance(Unknown Source)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:435)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at sbt.TestRunner.runTest$1(TestFramework.scala:76)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
 [0m[[0minfo[0m] [0m[31mvm.PublicVirtualMachineParserSuite *** ABORTED ***[0m[0m
 [0m[[0minfo[0m] [0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0minfo[0m] [0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:24)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at factory.VirtualMachineFactory$.virtualMachineParser(VirtualMachineFactory.scala:25)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at vm.PublicVirtualMachineParserSuite.<init>(PublicVirtualMachineParserSuite.scala:8)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
 [0m[[0minfo[0m] [0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m

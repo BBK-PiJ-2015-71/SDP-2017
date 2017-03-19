@@ -1,6 +1,7 @@
 package factory
 
 import bc.{ByteCodeFactory, ByteCodeParser}
+import implementation.ProgramParserImpl
 import vendor.ProgramParser
 import vm.{VirtualMachine, VirtualMachineParser}
 

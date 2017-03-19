@@ -7,7 +7,7 @@
                      <testcase classname="bc.PublicByteCodeFactorySuite" name="(It is not a test)" time="0.0">
                                                  <error message="an implementation is missing" type="scala.NotImplementedError">scala.NotImplementedError: an implementation is missing
 	at scala.Predef$.$qmark$qmark$qmark(Predef.scala:284)
-	at factory.VirtualMachineFactory$.byteCodeFactory(VirtualMachineFactory.scala:15)
+	at factory.VirtualMachineFactory$.byteCodeFactory(VirtualMachineFactory.scala:16)
 	at bc.PublicByteCodeFactorySuite.&lt;init&gt;(PublicByteCodeFactorySuite.scala:7)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
