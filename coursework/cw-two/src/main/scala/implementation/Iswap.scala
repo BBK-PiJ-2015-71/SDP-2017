@@ -4,7 +4,9 @@ import bc.{ByteCode, ByteCodeValues}
 import vm.VirtualMachine
 
 /**
-  * Created by pablo on 17/03/2017.
+  * This class represents the bytecote implementation of an Iswap
+  *
+  * @author Ullash Hazarika, Pablo Quinoa
   */
 class Iswap extends ByteCode {
   /**
@@ -23,7 +25,7 @@ class Iswap extends ByteCode {
   override def execute(vm: VirtualMachine): VirtualMachine = {
     val value1= vm.pop()
     val value2= vm.pop()
-    vm.push(value2._1)
     vm.push(value1._1)
+    vm.push(value2._1)
   }
 }

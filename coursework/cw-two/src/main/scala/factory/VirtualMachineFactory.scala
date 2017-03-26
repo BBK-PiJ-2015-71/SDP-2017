@@ -1,7 +1,7 @@
 package factory
 
 import bc.{ByteCodeFactory, ByteCodeParser}
-import implementation.{ByteCodeFactoryImpl, ByteCodeParserImpl, ProgramParserImpl, VirtualMachineParserImpl}
+import implementation.{ByteCodeFactoryImpl, ByteCodeParserImpl, ProgramParserImpl, VirtualMachineParserImpl, VirtualMachineImpl}
 import vendor.ProgramParser
 import vm.{VirtualMachine, VirtualMachineParser}
 
@@ -9,6 +9,8 @@ import vm.{VirtualMachine, VirtualMachineParser}
   * The `VirtualMachineFactory` follows the *factory pattern*. It provides
   * methods for each of the important parts in this assignment. You must
   * implement each method such that it returns an object of the correct type.
+  *
+  * @author Ullash Hazarika, Pablo Quinoa
   */
 object VirtualMachineFactory {
   // TODO
@@ -24,5 +26,5 @@ object VirtualMachineFactory {
   def virtualMachineParser: VirtualMachineParser = new VirtualMachineParserImpl
 
   // TODO
-  def virtualMachine: VirtualMachine = ???
+  def virtualMachine: VirtualMachine = new VirtualMachineImpl
 }

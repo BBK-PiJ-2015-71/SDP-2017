@@ -3,30 +3,13 @@
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set(C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\vendor\PublicVendorParserSuite.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals$IfExprTraverser.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\bc\PublicByteCodeFactorySuite.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals$MethodTraverser.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\bc\PublicByteCodeParserSuite.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals$ValTraverser.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals$MethodCallTraverser.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\vm\PublicVirtualMachineSuite.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\support\TreeTraversals$.class, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes\vm\PublicVirtualMachineParserSuite.class)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set(C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vm\PublicVirtualMachineParserSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vm\PublicVirtualMachineSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vendor\PublicVendorParserSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\support\TreeTraversals.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\bc\PublicByteCodeFactorySuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\bc\PublicByteCodeParserSuite.scala)[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vm\PublicVirtualMachineParserSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vm\PublicVirtualMachineSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\vendor\PublicVendorParserSuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\support\TreeTraversals.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\bc\PublicByteCodeFactorySuite.scala, C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\src\test\scala\bc\PublicByteCodeParserSuite.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 6 sources: invalidated sources (6) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 6 Scala sources to C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes...[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 5181d997, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes;C:\Users\User\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\test-classes;C:\Users\User\Documents\MSC CS\sdp\coding\coursework\cw-two\target\scala-2.12\classes;C:\Users\User\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.1.jar;C:\Users\User\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.1.jar;C:\Users\User\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar;C:\Users\User\.ivy2\cache\org.slf4j\slf4j-simple\jars\slf4j-simple-1.7.22.jar;C:\Users\User\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.22.jar;C:\Users\User\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.1.jar;C:\Users\User\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.1.jar;C:\Users\User\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.0.4.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 19.595824961 s[0m
-[0m[[0mdebug[0m] [0mNew invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m	Set()[0m
-[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

@@ -3,9 +3,13 @@ package implementation
 import bc._
 
 /**
-  * Created by pablo on 17/03/2017.
+  * This class creates new bytecodes given a byte and argument (factory of
+  * Bytecodes)
+  *
+  * @author Ullash Hazarika, Pablo Quinoa
   */
 class ByteCodeFactoryImpl extends ByteCodeFactory with ByteCodeValues {
+
   /**
     * Returns a [[ByteCode]].
     *

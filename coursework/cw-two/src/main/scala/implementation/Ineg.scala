@@ -4,7 +4,9 @@ import bc.{ByteCode, ByteCodeValues}
 import vm.VirtualMachine
 
 /**
-  * Created by pablo on 17/03/2017.
+  * This class represents the bytecote implementation of an Ineg
+  *
+  * @author Ullash Hazarika, Pablo Quinoa
   */
 class Ineg extends ByteCode {
   /**
