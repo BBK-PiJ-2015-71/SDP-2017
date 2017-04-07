@@ -2000,9 +2000,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 7349ms :: artifacts dl 140ms
+[debug] :: resolution report :: resolve 7985ms :: artifacts dl 149ms
 [debug] 	report for exercises-week04#exercises-week04$sbt_2.10;1.0 default produced in C:\Users\User\Documents\MSC CS\sdp\coding\exercises\week04\target\resolution-cache\reports\exercises-week04-exercises-week04$sbt_2.10-default.xml
-[debug] 	resolve done (7349ms resolve - 140ms download)
+[debug] 	resolve done (7985ms resolve - 149ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: exercises-week04#exercises-week04$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2835,6 +2835,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
 [debug] 	[NOT REQUIRED] commons-io#commons-io;2.0.1!commons-io.jar(src)
-[debug] :: resolution report :: resolve 795ms :: artifacts dl 141ms
+[debug] :: resolution report :: resolve 868ms :: artifacts dl 170ms
 [debug] 	report for exercises-week04#exercises-week04$sources_2.10;1.0 default produced in C:\Users\User\Documents\MSC CS\sdp\coding\exercises\week04\target\resolution-cache\reports\exercises-week04-exercises-week04$sources_2.10-default.xml
-[debug] 	resolve done (795ms resolve - 141ms download)
+[debug] 	resolve done (868ms resolve - 170ms download)

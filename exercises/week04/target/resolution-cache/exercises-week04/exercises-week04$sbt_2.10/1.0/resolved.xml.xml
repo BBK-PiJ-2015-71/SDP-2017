@@ -4,7 +4,7 @@
 		module="exercises-week04$sbt_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170326092643"
+		publication="20170407193237"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
