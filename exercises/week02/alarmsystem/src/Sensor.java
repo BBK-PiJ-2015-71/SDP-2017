@@ -5,5 +5,8 @@ public interface Sensor extends SecuritySensor {
 
   String getSensorType();
 
- double getBatteryPercentage();
+  double getBatteryPercentage();
+
+  String sendNotification();
+
 }

@@ -8,4 +8,5 @@ public interface SecuritySensor {
 
     String getSensorType();
 
+    String sendNotification();
 }
