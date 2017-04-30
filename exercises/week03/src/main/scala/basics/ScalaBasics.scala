@@ -1,9 +1,6 @@
 package basics
 
-import scala.collection.mutable.ArrayBuffer
 import scala.math._
-import BigInt.probablePrime
-import scala.util.Random
 
 /**
  * This is a singleton object containing the functions you need
