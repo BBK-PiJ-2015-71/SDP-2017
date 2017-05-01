@@ -1,9 +1,18 @@
 package singleton;
 
+/*
+Prevent breaking of the Singleton:
+Cloning: Prevented cloning by override clone() and throw clone not supported exception
+Deserialization: Prevented deserialization by overriding readResolve(0 to return the single instance of the class
+Reflection: Prevented duplicate objects by checking the static instance to be not-null and throw error
+if the one instance is not null
+
+ */
 import java.io.ObjectStreamException;
 import java.io.Serializable;
+import java.lang.Cloneable;
 
-public class SingletonProtected implements Serializable {
+public class SingletonProtected implements Serializable,Cloneable  {
     private static final long serialVersionUID = -1093810940935189395L;
     private static SingletonProtected sc = new SingletonProtected();
 

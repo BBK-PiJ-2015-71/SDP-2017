@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingletonLazyDoubleCheck.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SingletonLazyDoubleCheck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/singleton/SingletonLazyDoubleCheck.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -87,12 +87,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingletonProtected.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SingletonProtected.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/singleton/SingletonProtected.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/singleton/SingletonLazyInitialize.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/singleton/SingletonDeclareInitialize.java" />
         <option value="$PROJECT_DIR$/src/main/scala/singleton/SingletonLazyDoubleCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/singleton/SingletonProtected.java" />
       </list>
     </option>
   </component>
@@ -764,12 +767,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493584173602</updated>
-      <workItem from="1493584175142" duration="7424000" />
+      <workItem from="1493584175142" duration="9080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7424000" />
+    <option name="totallyTimeSpent" value="9080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1620" height="920" extended-state="0" />
@@ -921,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/singleton/SingletonProtected.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/factory/Creator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -977,6 +972,16 @@
         <state relative-caret-position="51">
           <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/singleton/SingletonProtected.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
