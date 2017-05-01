@@ -28,7 +28,6 @@ public class SingletonProtected implements Serializable,Cloneable  {
             classLoader = SingletonProtected.class.getClassLoader();
         return (classLoader.loadClass(classname));
 
-
     }
 
     public static SingletonProtected getInstance() {
