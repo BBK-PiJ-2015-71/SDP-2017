@@ -2,10 +2,10 @@ package decorator
 
 class SimplyNonVegPizza extends Pizza {
   def getDesc: String = {
-    return null
+    return "SimplyNonVegPizza (350)"
   }
 
   def getPrice: Double = {
-    return 0
+    return 350
   }
 }

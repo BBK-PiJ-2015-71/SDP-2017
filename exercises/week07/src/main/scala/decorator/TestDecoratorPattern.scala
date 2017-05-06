@@ -6,21 +6,8 @@ object TestDecoratorPattern {
   private var dformat: DecimalFormat = new DecimalFormat("#.##")
 
   def main(args: Array[String]) {
-    var pizza: Pizza = new SimplyVegPizza
-    pizza = new RomaTomatoes(pizza)
-    print(pizza)
-    pizza = new GreenOlives(pizza)
-    print(pizza)
-    pizza = new Spinach(pizza)
-    print(pizza)
-    pizza = new SimplyNonVegPizza
-    print(pizza)
-    pizza = new Meat(pizza)
-    print(pizza)
-    pizza = new Cheese(pizza)
-    print(pizza)
-    pizza = new Ham(pizza)
-    print(pizza)
+    print(new Spinach(new GreenOlives(new RomaTomatoes(new SimplyVegPizza))))
+    print(new Ham(new Cheese(new Cheese(new Meat(new SimplyNonVegPizza)))))
   }
 
   private def print(pizza: Pizza) {
