@@ -2,7 +2,15 @@ package command
 
 class SmsJob extends Job {
 
-  def setSms(sms: Sms): Unit = ???
+  var sms1: Sms = null
 
-  override def run(): Unit = ???
+  def setSms(sms: Sms): Unit = {
+    sms.sendSms
+    sms1=sms
+  }
+
+  override def run(): Unit = {
+    println("Job ID: " + Thread.currentThread.getId + " executing sms jobs.")
+    sms1.sendSms
+  }
 }

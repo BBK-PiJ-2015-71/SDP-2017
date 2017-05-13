@@ -2,7 +2,15 @@ package command
 
 class FileIOJob extends Job {
 
-  def setFileIO(fileIO: FileIO): Unit = ???
+  var file1: FileIO = null
 
-  override def run(): Unit = ???
+  def setFileIO(fileIO: FileIO): Unit = {
+    fileIO.execute()
+    file1=fileIO
+  }
+
+  override def run(): Unit = {
+    println("Job ID: " + Thread.currentThread.getId + " executing fileIO jobs.")
+    file1.execute()
+  }
 }

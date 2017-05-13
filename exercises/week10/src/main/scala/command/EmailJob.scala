@@ -2,7 +2,15 @@ package command
 
 class EmailJob extends Job {
 
-  def setEmail(email: Email): Unit = ???
+  var email1: Email =null
 
-  override def run(): Unit = ???
+  def setEmail(email: Email): Unit = {
+    email.sendEmail()
+    email1=email
+  }
+
+  override def run(): Unit = {
+    println("Job ID: " + Thread.currentThread.getId + " executing email jobs.")
+    email1.sendEmail()
+  }
 }
