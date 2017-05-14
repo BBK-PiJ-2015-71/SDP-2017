@@ -27,15 +27,10 @@ class ProgramParserImpl extends vendor.ProgramParser{
     //used a ListBuffer as it is mutable
     var tempa = new ListBuffer[String]()
     var temp1 = new ListBuffer[Instruction]()
-    val names = Vector("iconst", "iadd", "isub", "imul", "idiv", "irem",
-      "ineg", "iinc", "idec", "idup", "iswap", "print")
-
     for (line <- Source.fromFile(file2).getLines()) {
       tempa += line
-
     }
     val tempb= tempa.to[Vector]
-
     for(a<-tempb){
       val a1=a.split(" ")
         if (a1(0) == "iconst") {
@@ -64,12 +59,9 @@ class ProgramParserImpl extends vendor.ProgramParser{
     val inst=string.split("\n").to[Vector]
     //used a ListBuffer as it is mutable
     var temp1 = new ListBuffer[Instruction]()
-    val names = Vector("iconst", "iadd", "isub", "imul", "idiv", "irem",
-      "ineg", "iinc", "idec", "idup", "iswap", "print")
-
     for(a<-inst){
       val a1=a.split(" ")
-        //"iconst" has has argument
+        //"iconst" has argument
         if (a1(0) == "iconst") {
           val v = new Instruction(a1(0), Vector(a1(1).toInt))
           temp1 += v

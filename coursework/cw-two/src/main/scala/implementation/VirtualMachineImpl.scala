@@ -18,11 +18,8 @@ class VirtualMachineImpl extends VirtualMachine {
   var stack= new ListBuffer[Int]
 
   /**
-    * Executes a vector of bytecodes.
-    *
-    * Note, that this is an "immutable" object. That is, it
-    * will return a new virtual machine after executing each
-    * of the bytecode objects in the vector.
+    * Executes a vector of bytecodes. It will return a new virtual machine after executing
+    * each of the bytecodes from the given vector as this is an "immutable" object
     *
     * @param bc a vector of bytecodes
     * @return a new virtual machine
@@ -39,20 +36,16 @@ class VirtualMachineImpl extends VirtualMachine {
   }
 
   /**
-    * Executes the next bytecode in the vector of bytecodes.
-    *
-    * This method only executes a single byte code in the vector of bytecodes.
-    * It returns a tuple of the new vector of bytecodes (with the executed
+    * Executes the next bytecode in the vector of bytecodes.This method only executes a single byte code
+    * in the vector of bytecodes. It returns a tuple of the new vector of bytecodes (with the executed
     * bytecode removed) and the new virtual machine.
-    *
-    * You may assume that `bc` contains at least 1 bytecode.
     *
     * @param bc the vector of bytecodes
     * @return a tuple of a new vector of bytecodes and virtual machine
     */
   override def executeOne(bc: Vector[ByteCode]): (Vector[ByteCode], VirtualMachine) = {
-    (bc.head).execute(this)
-    //converting the bc Vector to a List which is mutable, enabling to remove the excecuted Bytecode
+    bc.head.execute(this)
+    //converting the bc Vector to a List which is mutable, enabling to remove the executed Bytecode
     val list = bc.to[ListBuffer]
     list.remove(0)
     (list.to[Vector], this)
@@ -76,22 +69,21 @@ class VirtualMachineImpl extends VirtualMachine {
     *         new virtual machine
     */
   override def pop(): (Int, VirtualMachine) = {
-    var i = stack.last
+    val i = stack.last
     stack.remove(stack.length-1)
     (i,this)
   }
 
   /**
-    * Returns the state of the virtual machine stack.
-    *
-    * The value at index 0 is the value on the top of the stack.
+    * Returns the state of the virtual machine stack.The value at index 0 is the
+    * value on the top of the stack.
     *
     * @return the state of the stack
     */
   override def state: Vector[Int] = {
     var newReversedStackList = new ListBuffer[Int]
     var i= stack.length-1
-    //reversing the List to get the Stack representaton in the desired return format
+    //reversing the List to get the Stack representation in the desired return format
     while (i>=0){
       newReversedStackList += stack(i)
       i+= -1

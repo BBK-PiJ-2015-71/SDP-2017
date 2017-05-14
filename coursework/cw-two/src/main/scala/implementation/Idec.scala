@@ -10,9 +10,8 @@ import vm.VirtualMachine
   */
 class Idec extends ByteCode {
   /**
-    * A unique byte value representing the bytecode. An implementation
-    * will set this to the bytecode corresponding to the name of the
-    * bytecode in [[ByteCodeValues]]
+    * A unique byte value representing the bytecode. It sets this to the bytecode
+    * corresponding to the name of the bytecode in [[ByteCodeValues]]
     */
   override val code: Byte = bytecode("idec")
 
